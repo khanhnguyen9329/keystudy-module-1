@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body >
+<h1 class="dream">QUẢN LÝ SẢN PHẨM XE HONDA</h1>
+<img src="https://www.honda.com.vn/images/logo.svg" border="1" style="background: gold">
+
+<p id="1234"></p>
+<div id="player">
+<div id="display">
+<input  type="text" id="timkiem" oninput="timkiem()" class="search" placeholder="Search"  >
+
+<table   class="table">
+    <tr>
+        <td>Tên Xe</td>
+        <td><input type="text" id="tenXe"   ></td>
+    </tr>
+    <tr>
+        <td>Hình ảnh</td>
+        <td> <input type="text" id="hinhAnh" ></td>
+    </tr>
+    <tr>
+        <td>Giá niêm yết</td>
+        <td><input type="number"id="soLuong"></td>
+
+    </tr>
+    <tr>
+        <td>Số Lượng</td>
+        <td> <input type="number"id="giaNiemYet"></td>
+
+    </tr>
+    <tr>
+        <td><button type="button" onclick="themSp()" id="update">Update</button></td>
+
+    </tr>
+
+</table>
+
+</div>
+    <div id="wrapper">
+<table  border="1" class="abc" >
+    <thead class="abcd" >
+    <tr class="lish">
+        <th>Tên sản phẩm</th>
+        <th>Hình ảnh</th>
+        <th>Số lượng tồn</th>
+        <th>Giá ($)</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody  id="hienThi">
+
+    </tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
+<script src="keystudi%20C0722G1.js">
+
+</script>
+<style>
+    #player{
+        display: flex;
+    }
+    #wrapper{
+        color:gold;
+        margin: -100px 50px;
+        font-size: 20px;
+        background: rgba(36, 37, 36, 0.3);
+        image-rendering: pixelated;
+        border:1px rgba(206, 22, 22, 0.7) groove;
+
+
+
+    }
+
+    .dream{
+        text-align: center;
+       background: rgba(71, 245, 2, 0.4);
+        padding: 10px ;
+        color:blue;
+        border:2px purple groove;
+        border-radius: 10px;
+
+        height: 50px;
+    }
+.lish{
+    color: #5bf501;
+    font-size: 30px;
+    background: rgb(0, 0, 0,0.5);
+
+}
+.search{
+    padding: 7px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    background: azure;
+    margin: 10px 50px;
+
+}
+.table{
+   padding: 30px 30px;
+    border-radius: 15px;
+    border:2px gold groove;
+    font-size: 20px;
+    background: rgb(0, 0, 0,0.5);
+    color:gold;
+}
+body{
+    /*background: rgb(255, 194, 62,0.4);*/
+    background: url("https://st.quantrimang.com/photos/image/2019/10/30/hinh-nen-phong-canh-dep-1.jpg");
+    background-size: cover;
+    image-rendering: pixelated;
+}
+#update{
+    background: rgb(245, 6, 6,0.8);
+    font-size: 22px;
+    border-radius: 10px;
+   color: blue;
+    border:1px rosybrown groove;
+
+}
+
+
+
+</style>

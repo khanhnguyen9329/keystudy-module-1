@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="background">
+<form class="abc">
+    <table class="from1" >
+        <tr>
+            <td>Username</td>
+            <td><input type="text" id="username" placeholder="Nhap ID"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" id="password" placeholder="*******"></td>
+        </tr>
+        <tr>
+            <td  colspan="2"><input type="button" value="Đăng Nhập" onclick="dangnhap()"></td>
+
+        </tr>
+    </table>
+</form>
+<script>
+    function dangnhap() {
+        let userName = document.getElementById("username").value;
+        let passWord = document.getElementById("password").value;
+        if (userName === "khanh" && passWord === "12345") {
+            window.location = "Quản lý sản phẩm Xe honda.html"
+
+        } else{
+            alert ("sai userName hoặc password")
+        }
+    }
+</script>
+</body>
+</html>
+<style>
+    .background {
+        background-image: url("https://cdn.pixabay.com/photo/2016/04/02/09/43/apple-1302430_960_720.jpg");
+        background-size: cover;
+    }
+
+    .abc {
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .from1 {
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+        flex-grow: 1;
+        padding: 40px 50px 60px;
+        background: rgba(227, 7, 7, 0.3);
+        border-radius: 30px;
+        font-size: 25px;
+        color: #5bf501;
+    }
+
+
+
+</style>

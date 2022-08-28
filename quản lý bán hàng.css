@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: red;
+    line-height: 1.15;
+}
+#wrapper{
+    background: palevioletred;
+    max-width: 2000px;
+    margin:0 auto;
+    background-size: cover;
+}
+.headline{
+    text-align: center;
+    margin: 30px 0px ;
+}
+h3{
+    background:white;
+    font-size:29px;
+    color: red;
+    padding: 10px 0px;
+    text-transform: capitalize;
+    border: 10px olivedrab groove;
+    display: inline-block;
+}
+ul.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products.li{
+    flex-basis:5%;
+    padding-left:20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.products li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -36px;
+    transition: 1.5s ease-in-out;
+
+}
+ul.products li:hover a.buy-now{
+    bottom: 0px;
+
+}
+
+ul.products li .product-info a {
+    text-decoration: olivedrab;
+    display: block;
+}
+ul.products li .product-info a.product-cat{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: firebrick;
+    padding: 0px 50px;
+}
+html {
+    background: silver;
+    background-size: cover ;
+    backdrop-filter: initial;
+}
+#paper{
+    background:beige;
+    font-size:15px;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+}
+#bomber{
+    background: beige;
+    font-size:15px;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    margin: auto;
+
+
+
+}
+#number{
+    background: red;
+    color: white;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+
+}
+h1 {
+    font-size: 20px;
+    color: rebeccapurple;
+}
+#summer{
+    background: beige;
+    font-size: 15px;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+
+}
+.yamato{
+    background: #3eff68;
+    background-size: cover;
+    font-size: 20px;
+    color: mediumblue;
+}
+.minoan{
+    background-size: cover;
+    background: red ;
+    font-size: 23px;
+    size: 25px;
+    color: beige;
+    text-transform: capitalize;
+    border: 10px olivedrab groove;
+    display: inline-block;
+}
